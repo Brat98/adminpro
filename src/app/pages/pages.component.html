@@ -1,0 +1,21 @@
+<!-- se creo este componente para separar el contenido del app.component y dejarlo para las rutas hijas  -->
+
+<div id="main-wrapper">
+    <app-header></app-header>
+    <app-sidebar></app-sidebar>
+    <div class="page-wrapper">
+      <div class="container-fluid">
+        <app-breadcrumbs></app-breadcrumbs>
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body">
+                <router-outlet></router-outlet>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
